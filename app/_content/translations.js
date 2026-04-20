@@ -19,7 +19,7 @@ export const translations = {
       stat1Label: "Countries of delivery",
       stat2Value: "250 000 t",
       stat2Label: "Annual volume",
-      stat3Value: "2011",
+      stat3Value: "2025",
       stat3Label: "On the market since",
     },
     advantages: {
@@ -163,7 +163,7 @@ export const translations = {
       stat1Label: "Държави на доставка",
       stat2Value: "250 000 т",
       stat2Label: "Годишен обем",
-      stat3Value: "2011",
+      stat3Value: "2025",
       stat3Label: "На пазара от",
     },
     advantages: {
