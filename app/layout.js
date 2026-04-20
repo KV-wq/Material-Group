@@ -22,13 +22,13 @@ export const metadata = {
     template: `%s — ${siteName}`,
   },
   description:
-    "Materials Group DIN EOOD — wholesale trading of wheat, corn, sunflower, barley, soy and rapeseed from the Black Sea region. Based in Sofia, Bulgaria.",
+    "Materials Group DIN EOOD — wholesale trading of wheat, corn, tobacco leaf, barley, soy and rapeseed from the Black Sea region. Based in Sofia, Bulgaria.",
   keywords: [
     "agricultural raw materials",
     "grain trading",
     "wheat supplier",
     "corn supplier",
-    "sunflower oil",
+    "tobacco leaf",
     "soybeans",
     "rapeseed",
     "barley",

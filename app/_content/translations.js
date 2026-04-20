@@ -80,10 +80,10 @@ export const translations = {
           photo: "card-photo-corn",
         },
         {
-          key: "sunflower",
-          name: "Sunflower seeds & oil",
-          desc: "Oil-bearing sunflower seeds, crude and refined sunflower oil in bulk and flexitanks.",
-          photo: "card-photo-sun",
+          key: "tobacco",
+          name: "Tobacco leaf",
+          desc: "Oriental, Virginia and Burley tobacco leaf. Sun-cured and flue-cured, graded and baled to buyer specifications.",
+          photo: "card-photo-tobacco",
         },
         {
           key: "barley",
@@ -224,10 +224,10 @@ export const translations = {
           photo: "card-photo-corn",
         },
         {
-          key: "sunflower",
-          name: "Слънчоглед и слънчогледово олио",
-          desc: "Маслодаен слънчоглед, сурово и рафинирано олио в насипно състояние и флекситанкове.",
-          photo: "card-photo-sun",
+          key: "tobacco",
+          name: "Тютюнев лист",
+          desc: "Ориенталски, Вирджиния и Бърлей тютюн. Слънчево и огнево сушен, класиран и балиран според спецификациите на купувача.",
+          photo: "card-photo-tobacco",
         },
         {
           key: "barley",

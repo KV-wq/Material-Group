@@ -27,7 +27,7 @@ export default function JsonLd({ locale = "en" }) {
       "Grain trading",
       "Wheat",
       "Corn",
-      "Sunflower",
+      "Tobacco leaf",
       "Barley",
       "Soybeans",
       "Rapeseed",

@@ -2,7 +2,7 @@ import { siteName } from "../_content/site";
 
 const title = `${siteName} — Търговия със селскостопански суровини`;
 const description =
-  "Materials Group DIN EOOD. Търговия на едро с пшеница, царевица, слънчоглед, ечемик, соя и рапица от Черноморския регион. София, България.";
+  "Materials Group DIN EOOD. Търговия на едро с пшеница, царевица, тютюнев лист, ечемик, соя и рапица от Черноморския регион. София, България.";
 
 export const metadata = {
   title,

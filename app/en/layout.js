@@ -2,7 +2,7 @@ import { siteName } from "../_content/site";
 
 const title = `${siteName} — Agricultural Raw Materials Trading`;
 const description =
-  "Materials Group DIN EOOD. Wholesale trading of wheat, corn, sunflower, barley, soy and rapeseed from the Black Sea region.";
+  "Materials Group DIN EOOD. Wholesale trading of wheat, corn, tobacco leaf, barley, soy and rapeseed from the Black Sea region.";
 
 export const metadata = {
   title,
