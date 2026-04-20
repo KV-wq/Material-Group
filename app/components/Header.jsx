@@ -124,7 +124,7 @@ export default function Header({ locale, dict }) {
             : "opacity-0 pointer-events-none"
         }`}
       >
-        <div className="absolute inset-0 bg-forest/60 backdrop-blur-md" />
+        <div className="absolute inset-0 bg-forest/75" />
 
         <nav
           onClick={(e) => e.stopPropagation()}
