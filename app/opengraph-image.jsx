@@ -1,6 +1,6 @@
 import { ImageResponse } from "next/og";
 
-export const runtime = "edge";
+export const runtime = "nodejs";
 export const alt = "Materials Group DIN — Agricultural raw materials trading";
 export const size = { width: 1200, height: 630 };
 export const contentType = "image/png";
@@ -13,9 +13,8 @@ export default async function Image() {
   try {
     const res = await fetch(BG_IMAGE);
     if (res.ok) {
-      const buf = await res.arrayBuffer();
-      const base64 = Buffer.from(buf).toString("base64");
-      bgDataUrl = `data:image/jpeg;base64,${base64}`;
+      const buf = Buffer.from(await res.arrayBuffer());
+      bgDataUrl = `data:image/jpeg;base64,${buf.toString("base64")}`;
     }
   } catch {}
 
