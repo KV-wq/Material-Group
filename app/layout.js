@@ -61,12 +61,19 @@ export const metadata = {
       "Wholesale trading of grain, oilseeds and legumes from the Black Sea region. Sofia, Bulgaria.",
     locale: "en_US",
     alternateLocale: ["bg_BG"],
+    images: [
+      {
+        url: "/opengraph-image.png",
+        alt: `${siteName} — Agricultural raw materials trading`,
+      },
+    ],
   },
   twitter: {
     card: "summary_large_image",
     title: `${siteName} — Agricultural Raw Materials Trading`,
     description:
       "Wholesale trading of grain, oilseeds and legumes from the Black Sea region.",
+    images: ["/opengraph-image.png"],
   },
   robots: {
     index: true,

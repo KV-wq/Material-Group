@@ -23,11 +23,18 @@ export const metadata = {
     description,
     locale: "bg_BG",
     alternateLocale: ["en_US"],
+    images: [
+      {
+        url: "/opengraph-image.png",
+        alt: `${siteName} — Търговия със селскостопански суровини`,
+      },
+    ],
   },
   twitter: {
     card: "summary_large_image",
     title,
     description,
+    images: ["/opengraph-image.png"],
   },
 };
 

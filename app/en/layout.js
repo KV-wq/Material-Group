@@ -23,11 +23,18 @@ export const metadata = {
     description,
     locale: "en_US",
     alternateLocale: ["bg_BG"],
+    images: [
+      {
+        url: "/opengraph-image.png",
+        alt: `${siteName} — Agricultural raw materials trading`,
+      },
+    ],
   },
   twitter: {
     card: "summary_large_image",
     title,
     description,
+    images: ["/opengraph-image.png"],
   },
 };
 

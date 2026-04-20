@@ -11,7 +11,7 @@ export default function JsonLd({ locale = "en" }) {
     legalName,
     url: siteUrl,
     logo: `${siteUrl}/icon.svg`,
-    image: `${siteUrl}/opengraph-image`,
+    image: `${siteUrl}/opengraph-image.png`,
     email: contact.email,
     telephone: contact.phone,
     address: {
