@@ -1,0 +1,156 @@
+@import "tailwindcss";
+
+@theme inline {
+  --color-background: #f7f5ef;
+  --color-foreground: #14231b;
+
+  --color-cream: #f7f5ef;
+  --color-cream-2: #eee9dc;
+  --color-forest: #0f2a1d;
+  --color-forest-2: #1a3b2a;
+  --color-forest-3: #24543b;
+  --color-moss: #6b8a5a;
+  --color-wheat: #c9a86a;
+  --color-wheat-2: #d9b97a;
+  --color-ink: #14231b;
+  --color-muted: #596b60;
+
+  --font-sans: var(--font-inter);
+  --font-serif: var(--font-playfair);
+}
+
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 6rem;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+}
+
+html,
+body {
+  background: var(--color-background);
+  color: var(--color-foreground);
+  font-family: var(--font-sans), system-ui, sans-serif;
+}
+
+::selection {
+  background: var(--color-forest-2);
+  color: var(--color-cream);
+}
+
+button:not(:disabled),
+[role="button"]:not(:disabled),
+a[href],
+label[for],
+summary {
+  cursor: pointer;
+}
+
+button:disabled,
+[role="button"][aria-disabled="true"] {
+  cursor: not-allowed;
+}
+
+html {
+  scrollbar-color: var(--color-forest-3) var(--color-cream-2);
+  scrollbar-width: thin;
+}
+
+*::-webkit-scrollbar {
+  width: 10px;
+  height: 10px;
+}
+*::-webkit-scrollbar-track {
+  background: var(--color-cream-2);
+}
+*::-webkit-scrollbar-thumb {
+  background: linear-gradient(
+    180deg,
+    var(--color-forest-3) 0%,
+    var(--color-forest) 100%
+  );
+  border: 2px solid var(--color-cream-2);
+  border-radius: 999px;
+}
+*::-webkit-scrollbar-thumb:hover {
+  background: linear-gradient(
+    180deg,
+    var(--color-wheat) 0%,
+    var(--color-forest-3) 100%
+  );
+}
+*::-webkit-scrollbar-corner {
+  background: var(--color-cream-2);
+}
+
+.font-serif {
+  font-family: var(--font-serif), Georgia, serif;
+  letter-spacing: -0.01em;
+}
+
+.container-x {
+  max-width: 1240px;
+  margin-inline: auto;
+  padding-inline: 1.25rem;
+}
+
+@media (min-width: 768px) {
+  .container-x {
+    padding-inline: 2rem;
+  }
+}
+
+.grain {
+  background-image:
+    radial-gradient(1200px 400px at 10% 0%, rgba(201, 168, 106, 0.15), transparent 60%),
+    radial-gradient(900px 500px at 90% 10%, rgba(36, 84, 59, 0.2), transparent 60%);
+}
+
+.hero-photo {
+  background-image:
+    linear-gradient(180deg, rgba(15, 42, 29, 0.55) 0%, rgba(15, 42, 29, 0.85) 100%),
+    url("https://images.unsplash.com/photo-1500937386664-56d1dfef3854?auto=format&fit=crop&w=1920&q=80");
+  background-size: cover;
+  background-position: center;
+}
+
+.card-photo-wheat {
+  background-image: linear-gradient(180deg, rgba(15, 42, 29, 0) 40%, rgba(15, 42, 29, 0.85) 100%),
+    url("https://images.unsplash.com/photo-1574323347407-f5e1ad6d020b?auto=format&fit=crop&w=1200&q=80");
+  background-size: cover;
+  background-position: center;
+}
+.card-photo-corn {
+  background-image: linear-gradient(180deg, rgba(15, 42, 29, 0) 40%, rgba(15, 42, 29, 0.85) 100%),
+    url("https://images.unsplash.com/photo-1551810080-3eb3be72d3f4?auto=format&fit=crop&w=1200&q=80");
+  background-size: cover;
+  background-position: center;
+}
+.card-photo-sun {
+  background-image: linear-gradient(180deg, rgba(15, 42, 29, 0) 40%, rgba(15, 42, 29, 0.85) 100%),
+    url("https://images.unsplash.com/photo-1598920710727-e6c74781538c?auto=format&fit=crop&w=1200&q=80");
+  background-size: cover;
+  background-position: center;
+}
+.card-photo-barley {
+  background-image: linear-gradient(180deg, rgba(15, 42, 29, 0) 40%, rgba(15, 42, 29, 0.85) 100%),
+    url("https://images.unsplash.com/photo-1464226184884-fa280b87c399?auto=format&fit=crop&w=1200&q=80");
+  background-size: cover;
+  background-position: center;
+}
+.card-photo-soy {
+  background-image: linear-gradient(180deg, rgba(15, 42, 29, 0) 40%, rgba(15, 42, 29, 0.85) 100%),
+    url("https://images.unsplash.com/photo-1562702076-c719c8796b8d?auto=format&fit=crop&w=1200&q=80");
+  background-size: cover;
+  background-position: center;
+}
+.card-photo-rape {
+  background-image: linear-gradient(180deg, rgba(15, 42, 29, 0) 40%, rgba(15, 42, 29, 0.85) 100%),
+    url("https://images.unsplash.com/photo-1523348837708-15d4a09cfac2?auto=format&fit=crop&w=1200&q=80");
+  background-size: cover;
+  background-position: center;
+}
