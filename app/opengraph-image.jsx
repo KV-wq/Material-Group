@@ -1,21 +1,19 @@
 import { ImageResponse } from "next/og";
+import { readFile } from "node:fs/promises";
+import path from "node:path";
 
 export const runtime = "nodejs";
 export const alt = "Materials Group DIN — Agricultural raw materials trading";
 export const size = { width: 1200, height: 630 };
 export const contentType = "image/png";
 
-const BG_IMAGE =
-  "https://images.unsplash.com/photo-1500937386664-56d1dfef3854?auto=format&fit=crop&w=1600&q=80";
-
 export default async function Image() {
   let bgDataUrl = null;
   try {
-    const res = await fetch(BG_IMAGE);
-    if (res.ok) {
-      const buf = Buffer.from(await res.arrayBuffer());
-      bgDataUrl = `data:image/jpeg;base64,${buf.toString("base64")}`;
-    }
+    const file = await readFile(
+      path.join(process.cwd(), "public", "og-bg.jpg")
+    );
+    bgDataUrl = `data:image/jpeg;base64,${file.toString("base64")}`;
   } catch {}
 
   return new ImageResponse(
