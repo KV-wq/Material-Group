@@ -28,7 +28,7 @@ export default function Products({ dict, locale }) {
                 <p className="mt-3 text-sm text-white/80">{item.desc}</p>
                 <a
                   href={`/${locale}#contact`}
-                  className="mt-6 inline-flex items-center gap-2 overflow-hidden text-sm uppercase tracking-widest text-(--color-wheat-2) transition-colors duration-300 hover:text-(--color-wheat)"
+                  className="mt-6 inline-flex items-center gap-2 pr-3 text-sm uppercase tracking-widest text-(--color-wheat-2) transition-colors duration-300 hover:text-(--color-wheat)"
                 >
                   {dict.nav.cta}
                   <span
